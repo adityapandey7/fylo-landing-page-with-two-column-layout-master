@@ -1,0 +1,268 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: 0px auto;
+  width: 1200px;
+  max-width: 100%;
+  padding: 20px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex .text{
+  flex: 1;
+}
+.flex .image{
+  flex: 1;
+}
+.flex .form{
+  flex: 1;
+}
+.flex .image img{
+  max-width: 375px;
+}
+/* Navigation*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+nav ul {
+list-style-type: none;
+display: flex;
+padding: 0;
+}
+nav ul li{
+margin-left: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Navigation*/
+/*header*/
+
+.first .container .flex .text {
+  margin: 55px 0;
+}
+.first .container .flex .text h1{
+  padding-right: 150px;
+  font-size: 35px;
+}
+.first .container .flex .text p{
+  padding-right: 100px;
+  font-size: 18px;
+}
+.first .container .flex .text h1{
+  padding-right: 150px;
+}
+.email {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.email_type{
+ flex: 0.4;
+ height: 25px;
+ opacity: 0.7;
+ padding-left: 15px;
+ margin: 10px 15px 0 0;
+ border-radius: 2px;
+ font-size: 12px;
+ border: 1px solid;
+}
+.email_submit{
+  flex: 0.2;
+  background-color: blue;
+  color: white;
+  height: 30px;
+  font-size: 12px;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: -10px;
+  border-radius: 2px;
+  border: 1px solid blue;
+}
+/*header*/
+/*section - second*/
+.second{
+  background-color: hsl(240, 75%, 98%);
+  margin-top: 200px;
+  position: relative;
+}
+.second::before{
+  content: " ";
+  background-image: url(images/bg-curve-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
+.second .container .flex .text{
+  margin-top: -40px;
+}
+.second .container .flex .text h2{
+  font-size: 40px;
+}
+.second .container .flex .text p{
+  padding-right: 80px;
+  font-size: 18px;
+}
+.second .container .flex .text a{
+text-decoration: none;
+padding-bottom: 1px;
+border-bottom-style: solid;
+border-bottom-width: 2.1px;
+}
+.second .container .flex .text a img{
+position: relative;
+top: 4px;
+}
+
+.testimonial{
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 0 2px;
+  width: 300px;
+  padding: 20px;
+  position: relative;
+  top: 25px;
+}
+.second .container .flex .testimonial p{
+  font-size: 16px;
+  padding-right: 0;
+}
+.user_info{
+  display: flex;
+}
+.user_info .user_image img{
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+.user_info .user_text h4{
+  margin: 4px 0 -4px 10px;
+  font-size: 12px;
+}
+.user_info .user_text small{
+  margin: 0px 0 0px 10px;
+  font-size: 10px;
+}
+/*section - second*/
+/*section - third*/
+.third{
+  background-color: hsl(238, 22%, 44%);
+}
+.third .container .flex .text h2{
+  font-size: 30px;
+  color: white;
+  opacity: 0.9;
+}
+.third .container .flex .text p{
+  padding-right: 80px;
+  font-size: 17px;
+  color: white;
+  opacity: 0.9;
+}
+
+.third .container .flex .form .enquiry{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input{
+ height: 35px;
+ opacity: 0.5;
+ padding-left: 15px;
+ margin: -25px 205px 0 0;
+ border-radius: 2px;
+ font-size: 12px;
+ border: 1px solid;
+ background-color: white;
+}
+button{
+  background-color: blue;
+  color: white;
+  height: 35px;
+  font-size: 12px;
+  margin: 10px 450px 0 0;
+  border-radius: 2px;
+  border: 1px solid blue;
+}
+/*section - third*/
+/*footer*/
+footer{
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+}
+.text1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;}
+
+.first_box{
+  flex: 1;
+}
+.list{
+  flex: 1
+}
+.list{
+  display: flex;
+}
+.list ul{
+  list-style-type: none;
+}
+.list ul li a{
+  text-decoration: none;
+  color: white;
+}
+.list ul li{
+  margin-bottom: 15px;
+}
+
+/*footer*/
+@media screen and (max-width: 376px){
+  body{
+    text-align: center;
+  }
+
+  .flex{
+    flex-direction: column-reverse;
+  }
+.text1{
+  flex-direction: column;
+}
+.testimonial{
+  width: 100%;
+}
+nav ul li{
+margin-left: 20px;
+}
+nav ul li a{
+  font-size: 15px;
+}
+nav img{
+  height: 50px;
+  width: 100px;
+}
+.first .container .flex .text h1{
+  padding-right: 50px;
+  font-size: 25px;
+}
+.first .container .flex .text p{
+  padding-right: 00px;
+
+}
+}
